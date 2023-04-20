@@ -1,8 +1,7 @@
 import React from 'react'
 import { MediaType } from '../../collections/Media'
 
-
-export type Type = {
+export type PortfolioHeroType = {
     blockType: 'portfoliohero'
     blockName?: string
     thumbnail: MediaType

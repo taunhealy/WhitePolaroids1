@@ -1,17 +1,17 @@
 import { CollectionConfig } from 'payload/types';
 import { MediaType } from './Media';
 import formatSlug from '../utilities/formatSlug';
-import { Image } from '../blocks/Image/Config';
-import { Type as ImageType } from '../blocks/Image/Component';
-import { CallToAction } from '../blocks/CallToAction/Config';
-import { Type as CallToActionType } from '../blocks/CallToAction/Component';
-import { Content } from '../blocks/Content/Config';
-import { Type as ContentType } from '../blocks/Content/Component';
-import { Type as PortfolioType } from '../blocks/PortfolioHero/Component';
-import { PortfolioHero } from '../blocks/PortfolioHero/Config';
+import { Image } from '../blocks/Image/Image_Config';
+import { Type as ImageType } from '../blocks/Image/Image_Component';
+import { CallToAction } from '../blocks/CallToAction/CallToAction_Config';
+import { Type as CallToActionType } from '../blocks/CallToAction/CallToAction_Component';
+import { Content } from '../blocks/Content/Content_Config';
+import { Type as ContentType } from '../blocks/Content/Content_Component';
+import { PortfolioHero } from '../blocks/PortfolioHero/PortfolioHero_Config';
+import { PortfolioHeroType } from '../blocks/PortfolioHero/PortfolioHero_Component';
 
 
-export type Layout = CallToActionType | ContentType | ImageType | PortfolioType |
+export type Layout = CallToActionType | ContentType | ImageType | PortfolioHeroType
 
 export type Type = {
   title: string
@@ -55,7 +55,7 @@ export const Page: CollectionConfig = {
         CallToAction,
         Content,
         Image,
-        PortfolioHero
+        PortfolioHero,
       ],
     },
     {
